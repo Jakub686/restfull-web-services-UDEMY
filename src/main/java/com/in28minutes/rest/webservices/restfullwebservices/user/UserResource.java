@@ -3,18 +3,17 @@ package com.in28minutes.rest.webservices.restfullwebservices.user;
 
 import org.springframework.beans.factory.annotation.Autowired;
 //import org.springframework.hateoas.Resource;
-
+//import org.springframework.hateoas.mvc.ControllerLinkBuilder;
+//import static org.springframework.hateoas.mvc.ControllerLinkBuilder.*;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
-//import static org.springframework.hateoas.mvc.ControllerLinkBuilder.*;
-
-
 import javax.validation.Valid;
 import java.net.URI;
 import java.nio.file.attribute.UserPrincipalNotFoundException;
 import java.util.List;
 import java.util.ResourceBundle;
+
 
 @RestController
 public class UserResource {
@@ -34,9 +33,13 @@ public class UserResource {
         if(user==null)
             throw new UserNotFoundException("id-" + id);
 
-        //HATEOAS
+//        //HATEOAS
+//        Resource<User> resource = new Resource<User>(user);
+//        ControllerLinkBuilder linkTo =  linkTo(methodOn(this.getClass()).retrieveAllUsers());
+//        resource.add(linkTo.withRel("all-users"));
 
         return user;
+        //return resource;
     }
 
     @DeleteMapping("/users/{id}")
