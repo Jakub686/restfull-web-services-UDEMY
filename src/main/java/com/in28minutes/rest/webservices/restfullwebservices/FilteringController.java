@@ -28,7 +28,7 @@ public class FilteringController {
     @GetMapping("/filtering-list")
     public List<SomeBean> retrieveListOfSomeBeans(){
         return Arrays.asList(new SomeBean("value1", "value2", "value3"),
-        new SomeBean("value12","value22","value32"));
+                new SomeBean("value12","value22","value32"));
     }
 
 

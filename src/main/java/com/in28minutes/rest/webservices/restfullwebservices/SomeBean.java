@@ -3,7 +3,7 @@ package com.in28minutes.rest.webservices.restfullwebservices;
 import com.fasterxml.jackson.annotation.JsonFilter;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
-//@JsonFilter("SomeFilter")
+@JsonFilter("SomeFilter")
 //@JsonIgnoreProperties(value={"field1","field2"})
 public class SomeBean {
     private String field1;
