@@ -1,11 +1,10 @@
-package com.in28minutes.rest.webservices.restfullwebservices.versioning;
+package com.in28minutes.rest.webservices.restfulwebservices.versioning;
 
 public class Name {
     private String firstName;
     private String lastName;
 
-    public Name(){
-
+    public Name() {
     }
 
     public Name(String firstName, String lastName) {
@@ -29,4 +28,5 @@ public class Name {
     public void setLastName(String lastName) {
         this.lastName = lastName;
     }
+
 }
